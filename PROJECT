@@ -1,0 +1,19 @@
+domain: loxilb.io
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: kube-loxilb-operator
+repo: github.com/loxilb-io/kube-loxilb-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: loxilb.io
+  group: kubeloxilb
+  kind: Kubeloxilbapp
+  path: github.com/loxilb-io/kube-loxilb-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

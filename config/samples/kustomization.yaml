@@ -1,0 +1,4 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- kubeloxilb_v1alpha1_kubeloxilbapp.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples
