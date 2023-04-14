@@ -9,4 +9,16 @@ metadata:
     app.kubernetes.io/created-by: kube-loxilb-operator
   name: kubeloxilbapp-sample
 spec:
-  # TODO(user): Add fields here
+  # loxiURL is LoxiLB's API server URL. 
+  # kube-loxilb communicate to LoxiLB using API. 
+  loxiURL: ["http://192.168.59.214:11111"]
+  # Use BGP to advertise this service (default :false)
+  setBGP: false
+  # setLBMode : 0, 1, 2 
+  #  0 - default (only DNAT, preserves source-IP) 
+  #  1 - onearm (source IP is changed to load balancer’s interface IP) 
+  #  2 - fullNAT (sourceIP is changed to virtual IP)  
+  setLBMode: 2
+  #externalCIDR is CIDR or IPAddress range to allocate addresses from. 
+  #By default address allocated are shared for different services(Shared Mode)
+  externalCIDR: "192.168.58.214/32"
