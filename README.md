@@ -4,7 +4,8 @@ kube-loxilb-operator automates the deployment and management kube-loxilb.
 
 ## Description
 kube-loxilb is loxilb's implementation of kubernetes service load-balancer spec which includes support for load-balancer class, advanced IPAM (shared or exclusive)
-The github page of kube-loxilb: https://github.com/loxilb-io/kube-loxilb-operator[https://github.com/loxilb-io/kube-loxilb-operator]
+The github page of kube-loxilb: https://github.com/loxilb-io/kube-loxilb-operator[https://github.com/loxilb-io/kube-loxilb-operator].  
+
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
 **Note:** Your controller will automatically use the current context in your kubeconfig file (i.e. whatever cluster `kubectl cluster-info` shows).
